@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <h1>Customer Information</h1>
+    </div>
+    <div class="">
+      <p>Amount Paid: R3000.00</p>
+      <p>Amount Owed: R3000.00</p>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" *ngIf="company">
+      <div class="border1 ">
+        <div class="customer">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <div class="border4">
+                <img src="./../../../assets/img/ttch.png" alt="Company Logo">
+              </div>
+              <h5 class="text-white">{{ company.company_name }}</h5>
+            </div>
+            <div class="d-flex align-items-center">
+              <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Edit</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p>Email: {{ company.company_email }}</p>
+        <p>Phone: {{ company.company_tel }}</p>
+        <br>
+        <p>Location:</p>
+        <p>66 Ingersol RD, Lynwood Glen, Pretoria, 0001</p>
+        <br>
+        <p>Owner: Tshepo Selomo</p>
+        <p>Entity Type: Business</p>
+        <p>Created: {{ company.created_at.substring(0,10) }}</p>
+      </div>
+    </div>
+    <div class="col-lg-8">
+    <div class="border2 ">
+      <app-tabs></app-tabs>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="lined">
+  <hr>
+</div>

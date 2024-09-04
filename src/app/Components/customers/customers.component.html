@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="d-flex justify-content-between justify-center">
+    <h1>Customers</h1>
+    <a [routerLink]="['/companyreg',getEncryptedText()]" class="">Add Customer</a>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let comp of companies">
+      <a [routerLink]="['/customerinfo',comp.company_id ]" routerLinkActive="router-link-active" class="text-black">
+      <div class="border" >       
+          <div class="logo-image1">
+            <img src="./../../../assets/img/ttch.png" alt="Image" >
+          </div>
+          <hr>
+          <h6>
+            <div class="d-flex justify-content-between">
+              <label for="">Company Name:</label><label for="">{{ comp.company_name }}</label>
+            </div>
+            <div class="d-flex justify-content-between mt-1">
+              <label for="">Number of Invoices:</label><label for="">6</label>
+            </div>
+            <div class="d-flex justify-content-between mt-1">
+              <label for="">Number of quotes:</label><label for="">7</label>
+            </div>
+          </h6>
+        </div>
+        </a>
+      
+    </div>
+    
+  </div>
+
+
+</div>

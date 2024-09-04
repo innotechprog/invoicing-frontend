@@ -1,0 +1,29 @@
+h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.submissionn{
+    margin-bottom: 15px;
+    width: 15%;
+}
+.submission{
+    margin-bottom: 15px;
+    width: 15%;
+    
+}
+.col-lg-12{
+    margin-bottom: 15px;
+    width: 15%;
+}
+.product-list{
+    background-color: gainsboro;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.form-control{
+    border-radius: 15px;
+    border: none;
+    height: 44px;
+    line-height: 44px;
+}

@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row align-items-center">
+  <div class="col-lg-7">
+    <div class="form-setup col-lg-10">
+    <form (ngSubmit)="addCustomer()" >
+        <div class="row">
+          
+              <input type="hidden" name="customer_id" class="form-control" value="test" placeholder="Enter your name" [(ngModel)]="customer.customer_id">
+           
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="customer_name" class="form-control" placeholder="Enter your name" [(ngModel)]="customer.customer_name">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="surname">Surname</label>
+              <input type="text" name="customer_surname" class="form-control" aria-describedby="" placeholder="Enter surname" [(ngModel)]="customer.customer_surname">
+            </div>
+         </div>
+         <div class="col-lg-6">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" name="customer_email" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="customer.customer_email">
+          </div>
+       </div>
+       <div class="col-lg-6">
+        <div class="form-group">
+          <label for="cellphone">Cellphone</label>
+          <input type="text" name="customer_cellphone" class="form-control" aria-describedby="" placeholder="Enter cellphone" [(ngModel)]="customer.customer_cellphone">
+        </div>
+     </div>      
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" aria-describedby="emailHelp" placeholder="Enter password" [(ngModel)]="customer.password">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" name="confirmPassword" class="form-control" placeholder="Confirm Password" [(ngModel)]="customer.confirmPassword">
+      </div>
+      </div>
+    </div>
+
+      <div class="submission">
+      <button type="submit" class="btn btn-primary">Sign up</button>
+      <div class="bottom-line mt-3">
+        <div>
+          <a routerLink="/login">Already have an account? Login</a>
+        </div>
+    </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="side-pic">
+      <div>
+        <div class="logo-image">
+          <img src="./../../../assets/img/ttch.png" alt="Image" >
+        </div>
+        <img src="./../../../assets/img/bb.png" alt="Image">
+      </div>
+    </div>
+  </div>
+  <hr>
+  </div>
+

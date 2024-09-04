@@ -1,0 +1,30 @@
+/* preloader.component.css */
+.preloader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+  
+  .loading-lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  .line {
+    width: 20px; /* Adjust width of each line */
+    height: 2px;
+    background-color: #3498db; /* Adjust color as needed */
+    margin: 0 2px; /* Adjust spacing between lines */
+    animation: loading-animation 1s infinite ease-in-out; /* Adjust animation duration and easing */
+  }
+  
+  @keyframes loading-animation {
+    0% { transform: scaleX(0); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0); }
+  }
+  

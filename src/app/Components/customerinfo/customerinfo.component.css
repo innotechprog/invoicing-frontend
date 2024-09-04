@@ -1,0 +1,43 @@
+.border1{
+  background-color: #1C2D6F;
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 25px 25px 25px 25px;
+  overflow: hidden;
+}
+.border2{
+  background-color: #D9D9D9;
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 25px 25px 25px 25px;
+}
+.border1 p{
+  color: white;
+}
+.border1 hr{
+  color: white;
+}
+.border4 {
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.border4 img {
+  width: 100%;
+}
+
+.customer{
+  margin-bottom: 0%;
+}
+.lined{
+  margin-top:100px;
+}

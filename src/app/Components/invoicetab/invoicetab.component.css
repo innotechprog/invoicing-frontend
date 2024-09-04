@@ -1,0 +1,12 @@
+.table td, .table th {
+  border: none;
+}
+.table{
+  background-color: pink;
+}
+/*th{
+  background-color: red;
+}*/
+.table {
+  background-color: lightblue; /* Set the desired background color */
+}

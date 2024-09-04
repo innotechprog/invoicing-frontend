@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="top-logo mb-3">
+    <img src="./../../../assets/img/ttch.png" alt="Image" class="logo-image">
+   </div>
+
+  <div class="form-setup col-lg-9 mx-auto">
+      <div class="captionn">
+        <h2>Company Registration</h2>
+      </div>
+    <form (ngSubmit)="addCompany()" #fileForm="ngForm">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="company_name">Company Name</label>
+              <input type="text" class="form-control" name="company_name" aria-describedby="emailHelp" placeholder="Enter company name" [(ngModel)]="company.company_name">
+            </div>
+         </div>
+         <div class="col-lg-6">
+          <div class="form-group">
+            <label for="company_tel">Company Email</label>
+            <input type="text" class="form-control" name="company_email"  placeholder="Enter company email" [(ngModel)]="company.company_email">
+          </div>
+        </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="company_tel">Company Telephone</label>
+          <input type="text" class="form-control" name="company_tel"  placeholder="Enter company telephone" [(ngModel)]="company.company_tel">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="company_logo">Company Logo</label>
+          <input type="file" class="form-control" name="company_logo" aria-describedby="emailHelp" placeholder="Choose a logo" [(ngModel)]="company.company_logo"  (change)="onFileChange($event)">
+        </div>
+      </div>
+   
+          <input type="hidden" class="form-control" name="company_logo" aria-describedby="emailHelp" placeholder="Choose a logo" [(ngModel)]="company.company_logo"  (change)="onFileChange($event)">
+       
+      <div class="col-lg-12">
+        <div class="form-group">
+          <label for="company_address">Company Address</label>
+          <app-auto-location name="company_address" [(ngModel)]="company.company_address"></app-auto-location>
+        </div>
+      </div>
+  
+    </div>
+    <div class="submission">
+      <button type="submit" class="btn btn-primary">Add Company</button>
+      </div>
+    </form>
+  </div>
+  <hr>
+</div>

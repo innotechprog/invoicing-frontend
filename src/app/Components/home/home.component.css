@@ -1,0 +1,49 @@
+.head h3{
+  color: #1C2D6F;
+}
+.bottomm{
+  background-color: #F5F5F5;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+.border button{
+  background-color: #47B2E4;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 295px;
+  width: 100%;
+}
+.submission3 .btn{
+  align-items: center;
+}
+
+.price{
+  margin-bottom:30px;
+  align-items: center;
+  margin-top:30px;
+}
+.border{
+  background-color: #1C2D6F;
+  border-radius: 25px;
+  margin-top: 50px;
+  height: 400px;
+  padding: 15px;
+}
+p{
+  margin-top: 25px;
+}
+h4{
+  color: white;
+}
+.package h4{
+  text-align: center;
+  color: white;
+}
+hr{
+  margin-top: 30px;
+}
+
